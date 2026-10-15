@@ -89,12 +89,12 @@ dependencies {
 
     // Compose 1.9.x is pinned to the Android API 36 toolchain used by AGP 8.13.
     implementation("androidx.compose.ui:ui:1.9.4")
-    implementation("androidx.compose.ui:ui-graphics:1.11.4")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.11.4")
-    implementation("androidx.compose.foundation:foundation:1.11.4")
-    implementation("androidx.compose.animation:animation:1.11.4")
+    implementation("androidx.compose.ui:ui-graphics:1.9.4")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.9.4")
+    implementation("androidx.compose.foundation:foundation:1.9.4")
+    implementation("androidx.compose.animation:animation:1.9.4")
     implementation("androidx.compose.material3:material3:1.4.0")
-    implementation("androidx.compose.material:material-icons-extended:1.7.8")
+    implementation("androidx.compose.material:material-icons-extended:1.9.4")
 
     implementation("androidx.camera:camera-camera2:1.5.2")
     implementation("androidx.camera:camera-lifecycle:1.5.2")
@@ -104,7 +104,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.11.4")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.11.4")
-    debugImplementation("androidx.compose.ui:ui-test-manifest:1.11.4")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.9.4")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.9.4")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.9.4")
 }
