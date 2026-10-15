@@ -81,14 +81,14 @@ android {
 
 dependencies {
     implementation("androidx.core:core-ktx:1.17.0")
-    implementation("androidx.activity:activity-compose:1.13.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.10.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
-    implementation("androidx.datastore:datastore-preferences:1.2.1")
+    implementation("androidx.activity:activity-compose:1.12.4")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.4")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.9.4")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.4")
+    implementation("androidx.datastore:datastore-preferences:1.1.7")
 
-    // Compose 1.11.x is the stable line compatible with compileSdk 36 / AGP 8.13.
-    implementation("androidx.compose.ui:ui:1.11.4")
+    // Compose 1.9.x is pinned to the Android API 36 toolchain used by AGP 8.13.
+    implementation("androidx.compose.ui:ui:1.9.4")
     implementation("androidx.compose.ui:ui-graphics:1.11.4")
     implementation("androidx.compose.ui:ui-tooling-preview:1.11.4")
     implementation("androidx.compose.foundation:foundation:1.11.4")
@@ -96,9 +96,9 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.4.0")
     implementation("androidx.compose.material:material-icons-extended:1.7.8")
 
-    implementation("androidx.camera:camera-camera2:1.6.2")
-    implementation("androidx.camera:camera-lifecycle:1.6.2")
-    implementation("androidx.camera:camera-view:1.6.2")
+    implementation("androidx.camera:camera-camera2:1.5.2")
+    implementation("androidx.camera:camera-lifecycle:1.5.2")
+    implementation("androidx.camera:camera-view:1.5.2")
     implementation("com.google.mlkit:barcode-scanning:17.3.0")
 
     testImplementation("junit:junit:4.13.2")
