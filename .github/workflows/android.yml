@@ -10,13 +10,14 @@ permissions:
   contents: read
 
 concurrency:
-  group: qr-vision-${{ github.ref }}
+  group: qr-vision-${{ github.sha }}
   cancel-in-progress: true
 
 jobs:
   build:
     name: Test and build APK
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
