@@ -1,0 +1,13 @@
+# Gradle / Android Studio
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+
+# Local artifacts and signing material
+*.apk
+*.aab
+*.jks
+*.keystore
+.env
