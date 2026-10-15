@@ -94,7 +94,7 @@ dependencies {
     implementation("androidx.compose.foundation:foundation:1.9.4")
     implementation("androidx.compose.animation:animation:1.9.4")
     implementation("androidx.compose.material3:material3:1.4.0")
-    implementation("androidx.compose.material:material-icons-extended:1.9.4")
+    implementation("androidx.compose.material:material-icons-extended:1.7.8")
 
     implementation("androidx.camera:camera-camera2:1.5.2")
     implementation("androidx.camera:camera-lifecycle:1.5.2")
