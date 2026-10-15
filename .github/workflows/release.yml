@@ -20,7 +20,9 @@ jobs:
         with:
           ref: ${{ inputs.tag }}
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
+        with:
+          packages: 'platform-tools'
       - name: Install Android 36 platform
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
       - name: Set up JDK 17
@@ -58,6 +60,7 @@ jobs:
           ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/qrvision-release.jks
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: |
           if [[ "$VARIANT" == "release" ]]; then
             gradle --no-daemon assembleRelease --stacktrace
